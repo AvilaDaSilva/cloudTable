@@ -1,0 +1,106 @@
+<ion-view view-title="Profile">
+    <ion-content>
+
+        <div class="atom-profile-container ">
+
+            <div class="atom-profile">
+                <div class="atom-avatar ">
+                    <img class="atom-center shadow atom-avatar-image" ng-src="https://cdnil1.fiverrcdn.com/photos/29332844/original/programmer.jpg?1466411435">
+                </div>
+            </div>
+
+            <!-- slide box -->
+            <ion-slide-box on-slide-changed="slideHasChanged($index)" style="padding-bottom:8px">
+                <ion-slide>
+                    <div class="box blue text-center">
+                        <h3 class="slide-title">Frase de Efeito</h3>
+                        <ul>
+                            <li><small>Engraçado</small></li>
+                            <li>Conhece a Keli?</li>
+                        </ul>
+                    </div>
+                </ion-slide>
+
+                <ion-slide>
+                    <div class="box blue text-center">
+                        <h3 class="slide-title">Hobbies</h3>
+                        <ul>
+                            <li><small>Piadista</small></li>
+                            <li>Tá ligado a onça?</li>
+                        </ul>
+                    </div>
+                </ion-slide>
+
+                <ion-slide>
+                    <div class="box blue text-center">
+                        <h3 class="slide-title">Habilidades</h3>
+                        <ul>
+                            <li><small>Comédia</small></li>
+                            <li>Bá, te vi lá no passeio...</li>
+                        </ul>
+                    </div>
+                </ion-slide>
+
+            </ion-slide-box>
+            <!-- end slide box -->
+            <!-- box bellow -->
+            <div class="row" style="padding-top: 0px;">
+
+                <div class="col atom-slider-col atom-slider-col-active">
+                    <i class="icon ion-heart atom-icon"></i>
+                    <p class="atom-p">Saude</p>
+                </div>
+
+                <div class="col atom-slider-col has-badge">
+                    <i class="icon ion-wand atom-icon"></i>
+                    <p class="atom-p">Habilidades</p>
+                </div>
+
+                <div class="col atom-slider-col">
+                    <i class="icon ion-hammer atom-icon"></i>
+                    <p class="atom-p">Itens</p>
+                </div>
+            </div>
+            <!-- end box bellow -->
+        </div>
+
+        <div class="list card">
+
+            <div class="card">
+                <div class="item item-divider">
+                    Vida
+                </div>
+                <div class="item item-text-wrap" style="text-align: center">
+                    <div class="item range">
+                        <i class="icon ion-ios-heart-outline"></i>
+                        <input type="range" name="volume" min=0 max=100 value=100>
+                        <i class="icon ion-heart" style="color: red"></i>
+                    </div>
+                    Vida 1024/1024
+                </div>
+            </div>
+            <div class="card">
+                <div class="item item-divider">
+                    Mana
+                </div>
+                <div class="item item-text-wrap" style="text-align: center">
+                    <div class="item range">
+                        <i class="icon ion-ios-flask-outline"></i>
+                        <input type="range" name="volume" min=0 max=100 value=100>
+                        <i class="icon ion-erlenmeyer-flask" style="color: blue"></i>
+                    </div>
+                    Mana 2048/2048
+                </div>
+            </div>
+            <div class="card">
+                <div class="item item-divider">
+                    Twitter Tweet <small>(7 min ago)</small>
+                </div>
+                <div class="item item-text-wrap">
+                    Connect with your friends — and other fascinating people. Get in-the-moment updates on the things that interest you. And watch events unfold, in real time, from every angle
+                </div>
+            </div>
+
+        </div>
+    </ion-content>
+</ion-view>
